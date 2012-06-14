@@ -26,8 +26,7 @@ public class SidemenuActivity extends Activity {
         private View mLayout;
         private boolean mContentViewCalled = false;
         private boolean mBehindContentViewCalled = false;
-        private sidemenuList mMenuList;
-
+        
         public void onCreate(Bundle savedInstanceState) {
                 super.onCreate(savedInstanceState);
                 
@@ -84,9 +83,9 @@ public class SidemenuActivity extends Activity {
         private boolean isStatic() {
                 return mLayout instanceof LinearLayout;
         }
-        
+                
         public int getBehindOffset() {
-                // TODO
+ 
                 return 0;
         }
         
@@ -95,7 +94,6 @@ public class SidemenuActivity extends Activity {
         }
         
         public float getBehindScrollScale() {
-                // TODO
                 return 0;
         }
         
@@ -108,8 +106,8 @@ public class SidemenuActivity extends Activity {
                 return msidemenu.findViewById(id);
         }
 
+        
         public void toggle() {
-//              if (isStatic()) return;
                 if (msidemenu.isMenuOpen()) {
                         showContent();
                 } else {
@@ -118,79 +116,13 @@ public class SidemenuActivity extends Activity {
         }
 
         public void showMenu() {
-//              if (isStatic()) return;
                 msidemenu.showMenu();
         }
 
         public void showContent() {
-//              if (isStatic()) return;
                 msidemenu.showContent();
         }
 
-        public void addMenuListItem(MenuListItem mli) {
-                mMenuList.add(mli);
-        }
-
-        public static class sidemenuList extends ListView {
-                public sidemenuList(final Context context) {
-                        super(context);
-                        setAdapter(new sidemenuListAdapter(context));
-                        setOnItemClickListener(new OnItemClickListener() {
-                                public void onItemClick(AdapterView<?> parent, View view, int position,
-                                                long id) {
-                                        OnClickListener listener = ((sidemenuListAdapter)getAdapter()).getItem(position).mListener;
-                                        if (listener != null) listener.onClick(view);
-                                }                               
-                        });
-                }
-                public void add(MenuListItem mli) {
-                        ((sidemenuListAdapter)getAdapter()).add(mli);
-                }
-        }
-
-        public static class sidemenuListAdapter extends ArrayAdapter<MenuListItem> {
-
-                public sidemenuListAdapter(Context context) {
-                        super(context, 0);
-                }
-                public View getView(int position, View convertView, ViewGroup parent) {
-                        View v;
-                        if (convertView != null) {
-                                v = convertView;
-                        } else {
-                                LayoutInflater inflater = 
-                                                (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                                v = inflater.inflate(R.layout.sidemenurow, null);
-                        }
-                        MenuListItem item = getItem(position);
-                        ImageView icon = (ImageView) v.findViewById(R.id.sidemenurowicon);
-                        icon.setImageDrawable(item.mIcon);
-                        TextView title = (TextView) v.findViewById(R.id.sidemenurowtitle);
-                        title.setText(item.mTitle);
-                        return v;
-                }
-        }
-
-        public class MenuListItem {
-                private Drawable mIcon;
-                private String mTitle;
-                private OnClickListener mListener;
-                public MenuListItem(String title) {
-                        mTitle = title;
-                }
-                public void setTitle(String title) {
-                        mTitle = title;
-                }
-                public void setOnClickListener(OnClickListener listener) {
-                        mListener = listener;
-                }
-                public View toListViewRow() {
-                        View v = SidemenuActivity.this.getLayoutInflater().inflate(R.layout.sidemenurow, null);
-                        ((TextView)v.findViewById(R.id.sidemenurowtitle)).setText(mTitle);
-                        ((ImageView)v.findViewById(R.id.sidemenurowicon)).setImageDrawable(mIcon);
-                        return v;
-                }
-        }
 
 
 

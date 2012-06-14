@@ -40,7 +40,7 @@ public class Sidemenu extends RelativeLayout {
         public void onMeasure(int widthSpec, int heightSpec) {
                 super.onMeasure(widthSpec, heightSpec);
         }
-        
+                
         public void setAboveContent(View v, ViewGroup.LayoutParams p) {
                 mViewAbove.setContent(v, p);
                 mViewAbove.invalidate();
@@ -80,5 +80,6 @@ public class Sidemenu extends RelativeLayout {
         public void setScrollScale(float f) {
                 mViewBehind.setScrollScale(f);
         }
+
 
 }
