@@ -1,6 +1,7 @@
-# Android Sidemenu (Yet another Fly-in-Menu)
+Android Sidemenu (Yet another Fly-in-Menu)
+==========================================
 
+Languages
+---------
 
-### Languages
-
-![English](http://github.com/maddeye/android-sidemenu/blob/master/resources/english.gif)   ![German](http://github.com/maddeye/android-sidemenu/blob/master/resources/german.gif)
+![English](https://github.com/maddeye/android-sidemenu/blob/master/resources/english.gif?raw=true)   ![German](https://github.com/maddeye/android-sidemenu/blob/master/resources/german.gif?raw=true)
