@@ -3,4 +3,4 @@
 
 ### Languages
 
-![English](https://github.com/maddeye/android-sidemenu/blob/master/resources/english.gif)   ![German](https://github.com/maddeye/android-sidemenu/blob/master/resources/german.gif)
+![English](http://github.com/maddeye/android-sidemenu/blob/master/resources/english.gif)   ![German](http://github.com/maddeye/android-sidemenu/blob/master/resources/german.gif)
