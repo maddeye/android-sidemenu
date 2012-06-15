@@ -14,15 +14,17 @@ public final class R {
         public static int ic_launcher=0x7f020000;
     }
     public static final class id {
+        public static int list=0x7f050003;
         public static int sidemenuabove=0x7f050002;
         public static int sidemenubehind=0x7f050001;
         public static int sidemenulayout=0x7f050000;
-        public static int sidemenurowicon=0x7f050003;
-        public static int sidemenurowtitle=0x7f050004;
+        public static int sidemenurowicon=0x7f050004;
+        public static int sidemenurowtitle=0x7f050005;
     }
     public static final class layout {
-        public static int sidemenumain=0x7f030000;
-        public static int sidemenurow=0x7f030001;
+        public static int sidemenulistmain=0x7f030000;
+        public static int sidemenumain=0x7f030001;
+        public static int sidemenurow=0x7f030002;
     }
     public static final class string {
         public static int app_name=0x7f040001;
