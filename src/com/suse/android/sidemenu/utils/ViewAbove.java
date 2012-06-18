@@ -723,7 +723,7 @@ public class ViewAbove extends ViewGroup {
 
             public void setContent(View v, ViewGroup.LayoutParams params) {
                     mAdapter.setContent(v, params);
-
+                    
                     ItemInfo ii = new ItemInfo();
                     ii.position = 1;
                     ii.object = mAdapter.instantiateItem(this, 1);
