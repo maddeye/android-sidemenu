@@ -45,7 +45,7 @@ import android.widget.Button;
 
 import com.suse.android.sidemenu.SidemenuActivity;
 
-public class SidemenuSampleActivity extends SidemenuActivity {
+public class SidemenuSampleActivity extends Sidemenu[List|Tab]Activity {
     
 	
     @Override
