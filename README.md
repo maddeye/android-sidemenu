@@ -7,6 +7,8 @@ Android Sidemenu (Yet another Fly-in-Menu)
 What is it
 ----------
 
+Android Sidemenu is a Facebook like fly-in-menu.
+
 Screenshots
 
 ![Overlay](https://github.com/maddeye/android-sidemenu/raw/master/resources/AboveScreen.jpg?raw=true) 
@@ -18,7 +20,7 @@ Screenshots
 Version
 -------
 
-0.0.1(beta)
+0.0.1(alpha)
 
 
 Android Version

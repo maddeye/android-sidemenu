@@ -29,9 +29,7 @@ public class SidemenuActivity extends Activity {
         
         public void onCreate(Bundle savedInstanceState) {
                 super.onCreate(savedInstanceState);
-                
-                requestWindowFeature(Window.FEATURE_NO_TITLE);
-                
+                                
                 super.setContentView(R.layout.sidemenumain);
                 
                 msidemenu = (Sidemenu)super.findViewById(R.id.sidemenulayout);
