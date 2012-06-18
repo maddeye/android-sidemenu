@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.suse.android.sidemenu.Sidemenu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sidemenulayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.suse.android.sidemenu.utils.ViewBehind
+        android:id="@+id/sidemenubehind"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="0dp" />
+
+    <com.suse.android.sidemenu.utils.ViewAbove
+        android:id="@+id/sidemenuabove"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+
+</com.suse.android.sidemenu.Sidemenu>

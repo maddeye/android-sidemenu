@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.suse.android.sidemenu.Sidemenu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sidemenulayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.suse.android.sidemenu.utils.ViewBehind
+        android:id="@+id/sidemenubehind"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="0dp" />
+
+    <com.suse.android.sidemenu.utils.ViewAbove
+        android:id="@+id/sidemenuabove"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+       
+        <TabHost
+         	android:id="@android:id/tabhost"
+         	android:layout_width="wrap_content"
+         	android:layout_height="wrap_content" >
+         	
+            <TabWidget 
+                android:id="@android:id/tabs"
+                android:layout_width="wrap_content"
+         		android:layout_height="wrap_content" >
+         		
+                <FrameLayout
+		            android:id="@android:id/tabcontent"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"/>
+                
+            </TabWidget>
+            
+        </TabHost>
+        
+    </com.suse.android.sidemenu.utils.ViewAbove>
+
+</com.suse.android.sidemenu.Sidemenu>
