@@ -20,13 +20,13 @@ Screenshots
 Version
 -------
 
-0.0.1(alpha)
+1.0.0(Release)
 
 
 Android Version
 ---------------
 
-Android 2.2 API Level 8
+Android 2.2 API Level 8 or higher
 
 
 How to use it
