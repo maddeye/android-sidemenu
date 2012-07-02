@@ -22,8 +22,10 @@ public final class R {
         public static int sidemenurowtitle=0x7f050005;
     }
     public static final class layout {
-        public static int sidemenumain=0x7f030000;
-        public static int sidemenurow=0x7f030001;
+        public static int sidemenulistmain=0x7f030000;
+        public static int sidemenumain=0x7f030001;
+        public static int sidemenurow=0x7f030002;
+        public static int sidemenutabmain=0x7f030003;
     }
     public static final class string {
         public static int app_name=0x7f040001;
