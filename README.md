@@ -72,8 +72,12 @@ with **setContentView** you set the main screen layout (the screen with the whit
 
 **toggle()** open/close the menu. You also can open the menu when you drag the left border.
 
+
 Documentation
 =============
+
+-------------
+
 
 General
 -------
