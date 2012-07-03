@@ -21,6 +21,8 @@ public class SidemenuListActivity extends Activity
      private View mLayout;
      private boolean mContentViewCalled = false;
      private boolean mBehindContentViewCalled = false;
+     private int behindOffset;
+     private float scrollScale;
      
      
      protected void onCreate(Bundle savedInstanceState) {
@@ -89,19 +91,21 @@ public class SidemenuListActivity extends Activity
      
      public int getBehindOffset() {
 
-             return 0;
+             return behindOffset;
      }
      
      public void setBehindOffset(int i) {
              msidemenu.setBehindOffset(i);
+             behindOffset = i;
      }
      
      public float getBehindScrollScale() {
-             return 0;
+             return scrollScale;
      }
      
      public void setBehindScrollScale(float f) {
              msidemenu.setScrollScale(f);
+             scrollScale = f;
      }
 
      @Override
