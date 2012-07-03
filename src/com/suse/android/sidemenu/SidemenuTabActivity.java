@@ -94,6 +94,10 @@ public class SidemenuTabActivity extends ActivityGroup
      private boolean isStatic() {
              return mLayout instanceof LinearLayout;
      }
+     
+     public boolean isOpened() {
+    	 return msidemenu.isMenuOpen();
+     }
              
      public int getBehindOffset() {
 

@@ -171,7 +171,6 @@ public class ViewAbove extends ViewGroup {
                     }
             }
 
-            
             interface OnAdapterChangeListener {
                     public void onAdapterChanged(PagerAdapter oldAdapter, PagerAdapter newAdapter);
             }

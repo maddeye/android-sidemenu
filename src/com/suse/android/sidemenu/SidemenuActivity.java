@@ -81,6 +81,10 @@ public class SidemenuActivity extends Activity {
         private boolean isStatic() {
                 return mLayout instanceof LinearLayout;
         }
+        
+        public boolean isOpened() {
+       	 return msidemenu.isMenuOpen();
+        }
                 
         public int getBehindOffset() {
  
