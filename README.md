@@ -72,6 +72,53 @@ with **setContentView** you set the main screen layout (the screen with the whit
 
 **toggle()** open/close the menu. You also can open the menu when you drag the left border.
 
+Documentation
+=============
+
+General
+-------
+
+* setContentView(int) : <font color="#daa520">void</font>
+	- Set the main content layout.
+
+* setContentView(View) : <font color="#daa520">void</font>
+	- Set the main content layout.
+
+* setContentView(View, LayoutParams) : <font color="#daa520">void</font>
+	- Set the main content layout.
+
+* setBehindContentView(int) : <font color="#daa520">void</font>
+	- Set the sidemenu layout.
+
+* setBehindContentView(View) : <font color="#daa520">void</font>
+	- Set the sidemenu layout.
+
+* setBehindContentView(View, LayoutParams) : <font color="#daa520">void</font>
+	- Set the sidemenu layout.
+
+* isOpened() : <font color="#daa520">boolean</font>
+	- (true) Sidemenu is opened.
+	- (false) Sidemenu is closed.
+
+* setBehindOffset(int) : <font color="#daa520">void</font>
+	- Set the distance to the margin on the right side.
+
+* setBehindScroolScale(int) : <font color="#daa520">void</font>
+	- Set the speed of the scroll animation.
+
+* toggle() : <font color="#daa520">void</font>
+	- Open/Close the sidemenu.
+
+* showMenu() : <font color="#daa520">void</font>
+	- Get the sidemenu to the foreground.
+
+* showContent() : <font color="#daa520">void</font>
+	- Get the content to the foreground.
+
+
+<font color="#ff0000">Every Activity own the standard methods of the superclass.</font>
+
+=============
 
 Authors
 -------
