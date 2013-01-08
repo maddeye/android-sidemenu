@@ -1,20 +1,9 @@
 package com.suse.android.sidemenu;
 
 import android.app.Activity;
-import android.content.Context;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.Window;
-import android.view.View.OnClickListener;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ListView;
-import android.widget.TextView;
 
 
 import com.suse.android.sidemenu.utils.*;
@@ -34,9 +23,9 @@ public class SidemenuActivity extends Activity {
                                 
                 super.setContentView(R.layout.sidemenumain);
                 
-                msidemenu = (Sidemenu)super.findViewById(R.id.sidemenulayout);
-                msidemenu.registerViews((ViewAbove) findViewById(R.id.sidemenuabove),
-                                (ViewBehind) findViewById(R.id.sidemenubehind));
+                msidemenu = (Sidemenu) super.findViewById(R.id.sidemenulayout);
+                msidemenu.registerViews((ViewAbove) super.findViewById(R.id.sidemenuabove),
+                                (ViewBehind) super.findViewById(R.id.sidemenubehind));
                 mLayout = super.findViewById(R.id.sidemenulayout);
         }
 

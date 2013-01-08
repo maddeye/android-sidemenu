@@ -32,9 +32,9 @@ public class SidemenuListActivity extends Activity
              
              super.setContentView(R.layout.sidemenumain);
              
-             msidemenu = (Sidemenu)super.findViewById(R.id.sidemenulayout);
-             msidemenu.registerViews((ViewAbove) findViewById(R.id.sidemenuabove),
-                             (ViewBehind) findViewById(R.id.sidemenubehind));
+             msidemenu = (Sidemenu) super.findViewById(R.id.sidemenulayout);
+             msidemenu.registerViews((ViewAbove) super.findViewById(R.id.sidemenuabove),
+                             (ViewBehind) super.findViewById(R.id.sidemenubehind));
              mLayout = super.findViewById(R.id.sidemenulayout);
      }
      
